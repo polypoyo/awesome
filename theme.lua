@@ -8,10 +8,10 @@ local dpi = xresources.apply_dpi
 
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
-
+local vars = require'config.vars'
 local theme = {}
 
-theme.font          = "sans 8"
+theme.font          = "sans " .. math.floor(8 * vars.scale)
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
