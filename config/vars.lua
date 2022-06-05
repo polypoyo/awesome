@@ -22,7 +22,7 @@ _M.scale = 1.3
 _M.tags = {
    'Dev',
    'Web',
-   'game',
+   'Games',
    '1',
    '2',
    '3',
