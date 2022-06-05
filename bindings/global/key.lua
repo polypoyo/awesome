@@ -81,6 +81,10 @@ awful.keyboard.append_global_keybindings{
 	awful.key{
 		key		= 'XF86AudioLowerVolume',
 		on_press	= function()volman:decrement()end
+	},
+	awful.key{
+		key		= 'XF86AudioMute',
+		on_press = function()volman:mute()end
 	}
 }
 -- tags related keybindings
