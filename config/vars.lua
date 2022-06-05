@@ -17,7 +17,8 @@ _M.layouts = {
    awful.layout.suit.magnifier,
    awful.layout.suit.corner.nw,
 }
-
+---@type number
+_M.scale = 1.3
 _M.tags = {
    'Dev',
    'Web',

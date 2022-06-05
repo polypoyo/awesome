@@ -1,5 +1,6 @@
 local _M = {}
 
+local vars = require'config.vars'
 local awful = require'awful'
 local hotkeys_popup = require'awful.hotkeys_popup'
 local beautiful = require'beautiful'
@@ -144,6 +145,7 @@ function _M.create_wibox(s)
    return awful.wibar{
       screen = s,
       position = 'top',
+      height = 20 * vars.scale,
       widget = {
          layout = wibox.layout.align.horizontal,
          -- left widgets
