@@ -4,6 +4,8 @@ A pretty awesome awesome configuration. Based on [this template](https://github.
 
 ## Installation
 
+Run the following shell commands to install this configuration:
+
 ```sh
 # Change directory to .config
 cd ~/.config
