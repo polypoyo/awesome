@@ -1,3 +1,14 @@
-# Polypoyo's Awesome config
+# Awesome
 
-Based on [this template](https://github.com/suconakh/awesome-awesome-rc)
+A pretty awesome awesome configuration. Based on [this template](https://github.com/suconakh/awesome-awesome-rc).
+
+## Installation
+
+```sh
+# Change directory to .config
+cd ~/.config
+# Move current awesome config to a backup for future reference
+mv awesome awesome.bak
+# Download the latest version of this repository into the new awesome folder
+git clone https://github.com/polypoyo/awesome.git awesome
+```
