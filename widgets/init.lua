@@ -9,17 +9,17 @@ local apps = require'config.apps'
 local mod = require'bindings.mod'
 
 _M.awesomemenu = {
-   {'hotkeys', function() hotkeys_popup.show_help(nil, awful.screen.focused()) end},
-   {'manual', apps.manual_cmd},
-   {'edit config', apps.editor_cmd .. ' ' .. awesome.conffile},
-   {'restart', awesome.restart},
-   {'quit', awesome.quit},
+   {'Hotkeys', function() hotkeys_popup.show_help(nil, awful.screen.focused()) end},
+   {'Manual', apps.manual_cmd},
+   {'Edit config', apps.editor_cmd .. ' ' .. awesome.conffile},
+   {'Restart', awesome.restart},
+   {'Quit', awesome.quit},
 }
 
 _M.mainmenu = awful.menu{
    items = {
-      {'awesome', _M.awesomemenu, beautiful.awesome_icon},
-      {'open terminal', apps.terminal}
+      {'Awesome', _M.awesomemenu, beautiful.awesome_icon},
+      {'Open Terminal', apps.terminal}
    }
 }
 
