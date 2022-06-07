@@ -5,6 +5,7 @@ local awful = require'awful'
 local hotkeys_popup = require'awful.hotkeys_popup'
 local beautiful = require'beautiful'
 local wibox = require'wibox'
+local caller = require'modules.caller'
 
 local apps = require'config.apps'
 local mod = require'bindings.mod'
@@ -14,7 +15,7 @@ _M.awesomemenu = {
    {'Manual', apps.manual_cmd},
    {'Edit config', apps.editor_cmd .. ' ' .. awesome.conffile},
    {'Restart', awesome.restart},
-   {'Quit', awesome.quit},
+   {'Quit', caller(awesome.quit)},
 }
 
 _M.mainmenu = awful.menu{
