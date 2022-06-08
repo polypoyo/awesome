@@ -6,6 +6,7 @@ local volman = require'modules.volumeman'
 local apps = require'config.apps'
 local mod = require'bindings.mod'
 local widgets = require'widgets'
+local caller = require'modules.caller'
 
 menubar.utils.terminal = apps.terminal
 
@@ -72,7 +73,8 @@ awful.keyboard.append_global_keybindings{
 		key         = 'p',
 		description = 'show the menubar',
 		group       = 'launcher',
-		on_press    = function() menubar.show() end,
+		-- on_press    = function() menubar.show() end,
+		on_press = caller(awful.util.spawn, "rofi -show drun")
 	},
 	awful.key{
 		key		= 'XF86AudioRaiseVolume',
