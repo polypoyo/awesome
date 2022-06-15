@@ -19,12 +19,19 @@ awful.keyboard.append_global_keybindings{
 		group       = 'awesome',
 		on_press    = hotkeys_popup.show_help,
 	},
+	--awful.key{
+	--	modifiers   = {mod.super},
+	--	key         = 'w',
+	--	description = 'show main menu',
+	--	group       = 'awesome',
+	--	on_press    = function() widgets.mainmenu:show() end,
+	--},
 	awful.key{
 		modifiers   = {mod.super},
 		key         = 'w',
-		description = 'show main menu',
+		description = 'window list',
 		group       = 'awesome',
-		on_press    = function() widgets.mainmenu:show() end,
+		on_press    = caller(awful.spawn, "rofi -show window"),
 	},
 	awful.key{
 		modifiers   = {mod.super, mod.ctrl},
