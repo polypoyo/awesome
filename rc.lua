@@ -6,7 +6,7 @@ pcall(require, 'luarocks.loader')
 -- load theme
 local beautiful = require'beautiful'
 local gears = require'gears'
-beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme.lua')
+beautiful.init(gears.filesystem.get_configuration_dir() .. 'theme/init.lua')
 
 -- load key and mouse bindings
 require'bindings'
