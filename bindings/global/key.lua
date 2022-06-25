@@ -34,6 +34,13 @@ awful.keyboard.append_global_keybindings{
 		on_press    = caller(awful.spawn, "rofi -show window"),
 	},
 	awful.key{
+		modifiers   = {mod.super},
+		key         = 'space',
+		description = 'general-purpose menu',
+		group       = 'awesome',
+		on_press    = caller(awful.spawn, "rofi -show combi"),
+	},
+	awful.key{
 		modifiers   = {mod.super, mod.ctrl},
 		key         = 'r',
 		description = 'reload awesome',
