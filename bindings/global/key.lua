@@ -66,7 +66,7 @@ awful.keyboard.append_global_keybindings{
 		key         = 'Return',
 		description = 'open a terminal',
 		group       = 'launcher',
-		on_press    = function() awful.spawn(apps.terminal) end,
+		on_press    = caller(awful.spawn, apps.terminal),
 	},
 	awful.key{
 		modifiers   = {mod.super},
